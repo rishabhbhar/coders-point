@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="./styles/imgs/logo.png" alt="logo"></div>
+            <li><a href="#">Home</a></li>
+            <li><a href="editor_index.html">Code Editor</a></li>
+            <li><a href="sortingvisualizer_index.html">Sorting Visualizer</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">Explore, Learn & Grow</p>
+                <p class="text-small">In this world of 7 billion people we need to promote e learning. This is the
+                    future of an educated world and we are proud to say that the Future of Education is here</p>
+                <div class="buttons">
+                    <button class="btn" href="editor_index.html" >Code Editor</button>
+                    <button class="btn" href="sortingvisualizer_index.html" >Sorting Visualizer</button>
+
+                </div>
+            </div>
+
+            <div class="secondHalf">
+                <img src="./styles/imgs/first.jfif" alt="Laptop Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big">Explore</p>
+            <p class="sectionSubTag text-small">In this generation its important for us to explore the
+                resources available on the internet. This helps in boosting and improving our technical skills.
+                The more we search and explore, the more we get to know about various aspects. </p>
+        </div>
+        <div class="thumbnail">
+            <img src="./styles/imgs/first.png" alt="laptop image" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="section section-left" id="about">
+        <div class="paras">
+            <p class="sectionTag text-big"> Learn </p>
+            <p class="sectionSubTag text-small">
+                Its important to keep learning always. Everthing is available onlline. Its just we have to 
+                align ourselves and focus on learning. Seeing the current trends, its important for us to focus 
+                on ourselves and keep on learning.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="./styles/imgs/img.jfif" alt="laptop image" class="imgFluid">
+        </div>
+    </section>
+    <section class="section" id="services">
+        <div class="paras">
+            <p class="sectionTag text-big"> Grow Together</p>
+            <p class="sectionSubTag text-small">Education began in prehistory, as adults trained the young in the
+                knowledge and skills deemed necessary in their society. Its important for all of us to explore the current trending
+            technologies, learn it from the root while practicing and grow ourselves as the best version. </p>
+
+            
+        </div>
+        <div class="thumbnail">
+            <img src="./styles/imgs/grow.png" alt="laptop image"
+                class="imgFluid">
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your email">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10"
+                placeholder="Ellaborate your concern"></textarea>
+            <button class="btn btn-sm btn-dark">Submit</button>
+        </div>
+    </section>
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy;  - @anushkasri  - All rights reserved
+        </p>
+    </footer>
+    <script>
+        burger = document.querySelector('.burger')
+        navbar = document.querySelector('.navbar')
+        navList = document.querySelector('.nav-list')
+        rightNav = document.querySelector('.rightNav')
+
+
+
+        burger.addEventListener('click', () => {
+            rightNav.classList.toggle('v-class-resp');
+            navList.classList.toggle('v-class-resp');
+            navbar.classList.toggle('h-nav-resp');
+
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/sortingvisualizer_style.css" />
+  <title>Sorting Visualizer</title>
+</head>
+
+<body>
+  <nav class="navbar background h-nav-resp">
+    <ul class="nav-list v-class-resp">
+      <div class="logo"><img src="./styles/imgs/logo.png" alt="logo"></div>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="editor_index.html">Code Editor</a></li>
+      <li><a href="sortingvisualizer_index.html">Sorting Visualizer</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <div class="rightNav v-class-resp">
+      <input type="text" name="search" id="search">
+      <button class="btn btn-sm">Search</button>
+    </div>
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="bars_container" id="bars_container"></div>
+
+    <div class="buttons_container">
+      <!-- <label for="slider">Array Size:</label> -->
+      <input type="range" id="slider" min="50" max="150" step="5" value="50" />
+
+      <select name="" id="speed">
+        <option value="100">Slow</option>
+        <option value="50">Medium</option>
+        <option value="10">Fast</option>
+      </select>
+      <select name="" id="algo">
+        <option value="bubble">Bubble Sort</option>
+        <option value="insertion">Insertion Sort</option>
+        <option value="heap">Heap Sort</option>
+        <option value="merge">Merge Sort</option>
+        <option value="quick">Quick Sort</option>
+      </select>
+      <button id="randomize_array_btn">Randomize Array</button>
+      <button id="sort_btn">Sort</button>
+    </div>
+  </div>
+  <footer class="background">
+    <p class="text-footer">
+      Copyright &copy; - @anushkasri - All rights reserved
+    </p>
+  </footer>
+  <script src="./styles/sortingvisualizer_index.js"></script>
+</body>
+
+</html>
